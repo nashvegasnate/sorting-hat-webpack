@@ -29,9 +29,9 @@ const sortingHat = () => {
   const theHat = houses[Math.floor(Math.random() * houses.length)];
   return theHat;
 };
-const sortStudentsByHouse = (array) => {
-  array.sort((a, b) => (a.house > b.house ? 1 : -1));
-};
+const sortStudentsByHouse = (array) => (
+  array.sort((a, b) => (a.house > b.house ? 1 : -1))
+);
 
 const cardCreator = (divId, array) => {
   let card = '';
